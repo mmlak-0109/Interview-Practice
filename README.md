@@ -3,7 +3,7 @@ Interview practice project #1
 
 ## 1. Describe a data project you worked on recently.
 
-The data project I worked on most recently was one called "Explore and Summarize Data".  In this project I used R to explore a dataset containing financial contributions made by California residents to Presidential candidates in the 2016 Presidential election.  After looking through the 19 variables I decided that only four of the existing variables would be useful to my analysis.  Those four variables were the names of the candidates, the cities where the contributions came from, the the occupation of the people who donated, and the donation amounts.  However, because there were far too many individual occupations to easily graph and examine, I ended up writing a function that used information from the United States Census Bureau that used the North American Industry Classification System to group the occupations into categories based on industry groupings. I also wrote functions and created a variable for the candidates political party.  So in total, I used five variables for my analysis.  I then began my analysis by plotting the counts of all five variables and moved on to get the total donation amounts for the other four variables.  To finish up, I analyzed total donation amounts for combinations of variables (ex. donation amounts given to each political party by occupation).  The main points of conclusion were that California residents overall, and especially those in bigger cities, lean Liberal and voted for and supported the Democratic candidates, In addition, Democratic candidates overall had the most people donate to them and the most money donated to them, and when broken down by occupation they won the support of every occupational category across the board in both count and dollar amount.
+The data project I worked on most recently was one called "Explore and Summarize Data".  In this project I used R to explore a dataset containing financial contributions made by California residents to Presidential candidates in the 2016 Presidential election.  After looking through the 19 variables I decided that only four of the existing variables would be useful to my analysis.  Those four variables were the names of the candidates, the cities where the contributions came from, the the occupation of the people who donated, and the donation amounts.  However, because there were far too many individual occupations to easily graph and examine, I ended up writing a function that used information from the United States Census Bureau that used the North American Industry Classification System to group the occupations into categories based on industry groupings. I also wrote a function to create a variable for each candidates political party.  So in total, I used five variables for my analysis.  I then began my analysis by plotting the counts of all five variables and moved on to get the total donation amounts for the other four variables.  To finish up, I analyzed total donation amounts for combinations of variables (ex. donation amounts given to each political party by occupation).  The main points of conclusion were that California residents overall, and especially those in bigger cities, lean Liberal and voted for and supported the Democratic candidates. In addition, Democratic candidates overall had the most people donate to them and the most money donated to them, and when broken down by occupation they won the support of every occupational category in both count and dollar amount.
 
 ## 2. You are given a ten piece box of chocolate truffles. You know based on the label that six of the pieces have an orange cream filling and four of the pieces have a coconut filling. If you were to eat four pieces in a row, what is the probability that the first two pieces you eat have an orange cream filling and the last two have a coconut filling?
 
@@ -27,7 +27,7 @@ In order to find the probability of this exact sequence, the probabilities above
  
 | Answer | 
 | --- |
-| 1/14 or 0.07 |
+| 1/14 or ~0.07 |
 
 ### Follow-up question: If you were given an identical box of chocolates and again eat four pieces in a row, what is the probability that exactly two contain coconut filling?
 
@@ -59,9 +59,8 @@ So, to sum up:
 | :---: |
 | 6/14 or ~0.43 |
 
-## 3. Given the table users:
+## 3. Given the table "users":
 
-     Table "users"
 | Column | Type |
 | --- | --- |
 | id | integer |
@@ -97,8 +96,8 @@ LIMIT 5
 **Example:**
 ```
 def first_unique(string):
- # Your code here
- return unique_char
+    # Your code here
+    return unique_char
 
 > first_unique('aabbcdd123')
 > c
@@ -136,4 +135,4 @@ In order to balance them, it is best to try and tune the parameters so that the 
 
 My personal goals would be to have improved as a data analyst.  I am still new to the world of data analytics and I know I still have a lot to learn.  I know the areas I am the weakest in right now, and I am sure more weaknesses will get highlighted as I work with real data to answer real world problems, so I want to meet those weaknesses head on to improve them.
 
-More specifically for this job, I would want to have become proficient in Java, "big data" systems like Hadoop, and learn how to become more business oriented in my alysis; and I would want to have brought value to the company and have helped the company as a whole grow.  I want to have been able to sufficiently answer any data questions that the specific engineering teams I work with have so that they were able to make better informed decisions to help the hundereds of thousands of users around the world have a better learning experience.
+More specifically for this job, I would want to have become proficient in Java, "big data" systems like Hadoop, and learn how to become more business oriented in my analysis.  I would also want to have brought value to the company and have helped the company as a whole grow.  I want to have been able to sufficiently answer any data questions that the engineering teams I work with have so that they were able to make better informed decisions to help the hundreds of thousands of users around the world have a better learning experience.

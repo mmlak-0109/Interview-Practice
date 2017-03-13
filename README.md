@@ -41,7 +41,7 @@ Next, let's list all of the possible combiniations where there are exactly 2 cho
 
 | 1 | 2 | 3 | 4 | 5 | 6 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| CCOO | COCO | COOC | OCC0 | OCOC | OOCC |
+| CCOO | COCO | COOC | OCCO | OCOC | OOCC |
 
 Finally, let's list all of the possible combiniations where there are less than exactly 2 chocolates with coconut filling:
 

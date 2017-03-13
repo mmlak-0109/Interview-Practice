@@ -3,7 +3,7 @@ Interview practice project #1
 
 ## 1. Describe a data project you worked on recently.
 
-The data project I worked on most recently was one called "Explore and Summarize Data".  In this project I used R to explore a dataset containing financial contributions made by California residents to Presidential candidates in the 2016 Presidential election.  After looking through the 19 variables I decided that only four of the existing variables would be useful to my analysis.  Those four variables were the names of the candidates, the cities where the contributions came from, the the occupation of the people who donated, and the donation amounts.  However, because there were far too many individual occupations to easily graph and examine, I ended up writing a function that used information from the United States Census Bureau that used the North American Industry Classification System to group the occupations into categories based on industry groupings. I also wrote functions and created variable for the candidates political party.  So in total, I used five variables for my analysis.  I then began my analysis by plotting the counts of all five variables and moved on to get the total donation amounts for the other four variables.  To finish up, I analyzed total donation amounts for combinations of variables (ex. donation amounts given to each political party by occupation).
+The data project I worked on most recently was one called "Explore and Summarize Data".  In this project I used R to explore a dataset containing financial contributions made by California residents to Presidential candidates in the 2016 Presidential election.  After looking through the 19 variables I decided that only four of the existing variables would be useful to my analysis.  Those four variables were the names of the candidates, the cities where the contributions came from, the the occupation of the people who donated, and the donation amounts.  However, because there were far too many individual occupations to easily graph and examine, I ended up writing a function that used information from the United States Census Bureau that used the North American Industry Classification System to group the occupations into categories based on industry groupings. I also wrote functions and created a variable for the candidates political party.  So in total, I used five variables for my analysis.  I then began my analysis by plotting the counts of all five variables and moved on to get the total donation amounts for the other four variables.  To finish up, I analyzed total donation amounts for combinations of variables (ex. donation amounts given to each political party by occupation).  The main points of conclusion were that California residents overall, and especially those in bigger cities, lean Liberal and voted for and supported the Democratic candidates, In addition, Democratic candidates overall had the most people donate to them and the most money donated to them, and when broken down by occupation they won the support of every occupational category across the board in both count and dollar amount.
 
 ## 2. You are given a ten piece box of chocolate truffles. You know based on the label that six of the pieces have an orange cream filling and four of the pieces have a coconut filling. If you were to eat four pieces in a row, what is the probability that the first two pieces you eat have an orange cream filling and the last two have a coconut filling?
 
@@ -37,13 +37,13 @@ First, let's list all the possible combinations where there are more than exactl
 | :---: | :---: | :---: |
 | CCCC | CCCO | OCCC |
 
-Next, let's list all of the possible combiniations where there are exactly 2 chocolates with coconut filling:
+Next, let's list all of the possible combinations where there are exactly 2 chocolates with coconut filling:
 
 | 1 | 2 | 3 | 4 | 5 | 6 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | CCOO | COCO | COOC | OCCO | OCOC | OOCC |
 
-Finally, let's list all of the possible combiniations where there are less than exactly 2 chocolates with coconut filling:
+Finally, let's list all of the possible combinations where there are less than exactly 2 chocolates with coconut filling:
 
 | 1 | 2 | 3 | 4 | 5 |
 | :---: | :---: | :---: | :---: | :---: |
@@ -57,7 +57,7 @@ So, to sum up:
 
 | Answer |
 | :---: |
-| 6/10 or ~0.43 |
+| 6/14 or ~0.43 |
 
 ## 3. Given the table users:
 
@@ -126,8 +126,14 @@ def first_unique(string):
 
 ## 5. What are underfitting and overfitting in the context of Machine Learning? How might you balance them?
   
-With machine learning, the goal is to use an algorithm to try and classify data points into groups depending on the characteristics of the data points.  In order to do this, I would first train the algorithm on some training data, and this is where underfitting and overfitting can start (and are really two sides to the same coin).  If the algorithm is underfitting the training data, it would not be able to correctly categorize the training data accurately.  If it is overfitting the data, it is able to categorize the training data with great accuracy (say at 90% or higher), but is not able to generalize that knowledge and categorize any new data accurately.
+With machine learning, the goal is to use an algorithm to try and classify data points into groups depending on the characteristics of the data points.  In order to do this, I would first train the algorithm on some training data, and this is where underfitting and overfitting can start.  If the algorithm is underfitting the training data, it would not be able to correctly categorize the training data nor any new data accurately.  If it is overfitting the data, it is able to categorize the training data with great accuracy (say at 90% or higher), but is not able to generalize that knowledge and categorize any new data accurately.
 
-For example, let's say you have some data for road conditions that is used to train self-driving cars, and the data represents the steepness and bumpiness of road terrain.  The goal of the algorithm would be to categorize the data points into terrain that requires the car to drive at a certain speed (for the sake of simplicity, let's call the speed "slow" or "fast") depending on the steepness and bumpiness of the terrain.  If the algorithm is underfitting the data, the car would not be able to drive on real roads without crashing a lot.  The same goes for overfitting, but in a slightly different way.  If the algorithm is doing too good of a job at categorizing the training data, it would do very well on the terrain that fit the training data well, but would do very poorly on terrain that is vastly different than the training data terrain.
+For example, let's say you have some data for road conditions that is used to train self-driving cars, and the data represents the steepness and bumpiness of road terrain.  The goal of the algorithm would be to categorize the data points into terrain that requires the car to drive at a certain speed depending on the steepness and bumpiness of the terrain.  If the algorithm is underfitting the data, the car would not be able to drive on real roads without crashing a lot.  The same goes for overfitting, but in a slightly different way.  If the algorithm is doing too good of a job at categorizing the training data, it would do very well on the terrain that fit the training data well, but would do very poorly on terrain that is vastly different than the training data.
+
+In order to balance them, it is best to try and tune the parameters so that the algorithm can generalize to new data.  This can be done by choosing good data, limiting the number of variables you use to train your algorithm to the ones that have the most predictive power, and properly randomizing the data chosen for the training data.  If all else fails, especially in the case of underfitting, the algorithm chosen might not be the best fit, so playing around with different algorithms to find the best one will help.
 
 ## 6. If you were to start your data analyst position today, what would be your goals a year from now?
+
+My personal goals would be to have improved as a data analyst.  I am still new to the world of data analytics and I know I still have a lot to learn.  I know the areas I am the weakest in right now, and I am sure more weaknesses will get highlighted as I work with real data to answer real world problems, so I want to meet those weaknesses head on to improve them.
+
+More specifically for this job, I would want to have become proficient in Java, "big data" systems like Hadoop, and learn how to become more business oriented in my alysis; and I would want to have brought value to the company and have helped the company as a whole grow.  I want to have been able to sufficiently answer any data questions that the specific engineering teams I work with have so that they were able to make better informed decisions to help the hundereds of thousands of users around the world have a better learning experience.

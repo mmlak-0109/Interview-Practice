@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:6419/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>README.md - Grip</title>
+  <link rel="icon" href="http://localhost:6419/__/grip/static/favicon.ico">
+  <link rel="stylesheet" href="./Interview_Practice_files/site-2798f974141c19d38ae985c943b406198a2c1be7de3c6c882e955c0a544aa12a.css">
+  <link rel="stylesheet" href="./Interview_Practice_files/github-29c1cf342cce83bc5ed40adbf7f2757224d81dc757647eb0b0f3871bf773f40c.css">
+  <link rel="stylesheet" href="./Interview_Practice_files/frameworks-19e26a1cefb5f1e92203a9468134dbf46b5a5308aeeeee09c96b32fec8c8b044.css">
+  <link rel="stylesheet" href="./Interview_Practice_files/octicons.css">
+  <style>
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+
+    
+
+      <div role="main" class="main-content">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+          <div class="repository-content">
+            <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+              
+                <h3>
+                  <span class="octicon octicon-book"></span>
+                  README.md
+                </h3>
+              
+              <article class="markdown-body entry-content" itemprop="text" id="grip-content">
+                <h1>
+<a id="user-content-interview-practice" class="anchor" href="http://localhost:6419/#interview-practice" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interview-Practice</h1>
+
+<p>Interview practice project #1</p>
+
+<h2>
+<a id="user-content-1-describe-a-data-project-you-worked-on-recently" class="anchor" href="http://localhost:6419/#1-describe-a-data-project-you-worked-on-recently" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Describe a data project you worked on recently.</h2>
+
+<p>The data project I worked on most recently was one called "Explore and Summarize Data".  In this project I used R to explore a dataset containing financial contributions made by California residents to Presidential candidates in the 2016 Presidential election.  After looking through the 19 variables I decided that only four of the existing variables would be useful to my analysis.  Those four variables were the names of the candidates, the cities where the contributions came from, the the occupation of the people who donated, and the donation amounts.  However, because there were far too many individual occupations to easily graph and examine, I ended up writing a function that used information from the United States Census Bureau that used the North American Industry Classification System to group the occupations into categories based on industry groupings. I also wrote a function to create a variable for each candidates political party.  So in total, I used five variables for my analysis.  I then began my analysis by plotting the counts of all five variables and moved on to get the total donation amounts for the other four variables.  To finish up, I analyzed total donation amounts for combinations of variables (ex. donation amounts given to each political party by occupation).  The main points of conclusion were that California residents overall, and especially those in bigger cities, lean Liberal and voted for and supported the Democratic candidates. In addition, Democratic candidates overall had the most people donate to them and the most money donated to them, and when broken down by occupation they won the support of every occupational category in both count and dollar amount.</p>
+
+<h2>
+<a id="user-content-2-you-are-given-a-ten-piece-box-of-chocolate-truffles-you-know-based-on-the-label-that-six-of-the-pieces-have-an-orange-cream-filling-and-four-of-the-pieces-have-a-coconut-filling-if-you-were-to-eat-four-pieces-in-a-row-what-is-the-probability-that-the-first-two-pieces-you-eat-have-an-orange-cream-filling-and-the-last-two-have-a-coconut-filling" class="anchor" href="http://localhost:6419/#2-you-are-given-a-ten-piece-box-of-chocolate-truffles-you-know-based-on-the-label-that-six-of-the-pieces-have-an-orange-cream-filling-and-four-of-the-pieces-have-a-coconut-filling-if-you-were-to-eat-four-pieces-in-a-row-what-is-the-probability-that-the-first-two-pieces-you-eat-have-an-orange-cream-filling-and-the-last-two-have-a-coconut-filling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. You are given a ten piece box of chocolate truffles. You know based on the label that six of the pieces have an orange cream filling and four of the pieces have a coconut filling. If you were to eat four pieces in a row, what is the probability that the first two pieces you eat have an orange cream filling and the last two have a coconut filling?</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">Total Pieces</th>
+<th align="center">Orange Cream</th>
+<th align="center">Coconut Filling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">10</td>
+<td align="center">6</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="center">P(1st Orange Cream)</th>
+<th align="center">P(2nd Orange Cream)</th>
+<th align="center">P(1st Coconut Filling)</th>
+<th align="center">P(2nd Coconut Filling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6/10</td>
+<td align="center">5/9</td>
+<td align="center">4/8 or 1/2</td>
+<td align="center">3/7</td>
+</tr>
+</tbody>
+</table>
+
+<p>In order to find the probability of this exact sequence, the probabilities above need to be multiplied together:</p>
+
+<pre><code>6/10 * 5/9 = 30/90 or 1/3
+
+1/2  * 3/7 = 3/14
+
+1/3 * 3/14 = 3/42 or 1/14
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1/14 or ~0.07</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="user-content-follow-up-question-if-you-were-given-an-identical-box-of-chocolates-and-again-eat-four-pieces-in-a-row-what-is-the-probability-that-exactly-two-contain-coconut-filling" class="anchor" href="http://localhost:6419/#follow-up-question-if-you-were-given-an-identical-box-of-chocolates-and-again-eat-four-pieces-in-a-row-what-is-the-probability-that-exactly-two-contain-coconut-filling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Follow-up question: If you were given an identical box of chocolates and again eat four pieces in a row, what is the probability that exactly two contain coconut filling?</h3>
+
+<p>First, let's list all the possible combinations where there are more than exactly 2 chocolates with coconut filling:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">CCCC</td>
+<td align="center">CCCO</td>
+<td align="center">OCCC</td>
+</tr>
+</tbody>
+</table>
+
+<p>Next, let's list all of the possible combinations where there are exactly 2 chocolates with coconut filling:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">CCOO</td>
+<td align="center">COCO</td>
+<td align="center">COOC</td>
+<td align="center">OCCO</td>
+<td align="center">OCOC</td>
+<td align="center">OOCC</td>
+</tr>
+</tbody>
+</table>
+
+<p>Finally, let's list all of the possible combinations where there are less than exactly 2 chocolates with coconut filling:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">COOO</td>
+<td align="center">OCOO</td>
+<td align="center">OOCO</td>
+<td align="center">OOOC</td>
+<td align="center">OOOO</td>
+</tr>
+</tbody>
+</table>
+
+<p>So, to sum up:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Total Combinations of 4 Chocolates</th>
+<th align="center">Total Combinations with Exactly 2 Coconut Filling</th>
+<th align="center">P(Of Exactly 2 Coconut Filling)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">14</td>
+<td align="center">6</td>
+<td align="center">6/14 or ~0.43</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="center">Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">6/14 or ~0.43</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="user-content-3-given-the-table-users" class="anchor" href="http://localhost:6419/#3-given-the-table-users" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Given the table "users":</h2>
+
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>username</td>
+<td>character</td>
+</tr>
+<tr>
+<td>email</td>
+<td>character</td>
+</tr>
+<tr>
+<td>city</td>
+<td>character</td>
+</tr>
+<tr>
+<td>state</td>
+<td>character</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>active</td>
+<td>boolean</td>
+</tr>
+</tbody>
+</table>
+
+<p>construct a query to find the top 5 states with the highest number of active users. Include the number for each state in the query result. Example result:</p>
+
+<table>
+<thead>
+<tr>
+<th>state</th>
+<th>num_active_users</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New Mexico</td>
+<td>502</td>
+</tr>
+<tr>
+<td>Alabama</td>
+<td>495</td>
+</tr>
+<tr>
+<td>California</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Maine</td>
+<td>201</td>
+</tr>
+<tr>
+<td>Texas</td>
+<td>189</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>My Code:</strong></p>
+
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> state, <span class="pl-c1">COUNT</span>(<span class="pl-k">*</span>) <span class="pl-k">AS</span> num_active_users <span class="pl-k">FROM</span> users
+<span class="pl-k">WHERE</span> active <span class="pl-k">=</span> TRUE
+<span class="pl-k">GROUP BY</span> state
+<span class="pl-k">ORDER BY</span> num_actve_users <span class="pl-k">DESC</span>
+<span class="pl-k">LIMIT</span> <span class="pl-c1">5</span></pre></div>
+
+<h2>
+<a id="user-content-4-define-a-function-first_unique-that-takes-a-string-as-input-and-returns-the-first-non-repeated-unique-character-in-the-input-string-if-there-are-no-unique-characters-return-none-note-your-code-should-be-in-python" class="anchor" href="http://localhost:6419/#4-define-a-function-first_unique-that-takes-a-string-as-input-and-returns-the-first-non-repeated-unique-character-in-the-input-string-if-there-are-no-unique-characters-return-none-note-your-code-should-be-in-python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Define a function first_unique that takes a string as input and returns the first non-repeated (unique) character in the input string. If there are no unique characters return None. Note: Your code should be in Python.</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>def first_unique(string):
+    # Your code here
+    return unique_char
+
+&gt; first_unique('aabbcdd123')
+&gt; c
+
+&gt; first_unique('a')
+&gt; a
+
+&gt; first_unique('112233')
+&gt; None
+</code></pre>
+
+<p><strong>My Code:</strong></p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">first_unique</span>(<span class="pl-smi">string</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">    Iterates through the string and counts how many times each character occurs </span>
+<span class="pl-s">    in the string.  If the character only occurs once, return that character.  </span>
+<span class="pl-s">    If the all the characters occur more than once, return "None".  </span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>
+    <span class="pl-k">for</span> char <span class="pl-k">in</span> string:
+        <span class="pl-k">if</span> string.count(char) <span class="pl-k">==</span> <span class="pl-c1">1</span>:
+            <span class="pl-k">return</span> char
+    <span class="pl-k">return</span> <span class="pl-c1">None</span></pre></div>
+
+<h2>
+<a id="user-content-5-what-are-underfitting-and-overfitting-in-the-context-of-machine-learning-how-might-you-balance-them" class="anchor" href="http://localhost:6419/#5-what-are-underfitting-and-overfitting-in-the-context-of-machine-learning-how-might-you-balance-them" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. What are underfitting and overfitting in the context of Machine Learning? How might you balance them?</h2>
+
+<p>With machine learning, the goal is to use an algorithm to try and classify data points into groups depending on the characteristics of the data points.  In order to do this, I would first train the algorithm on some training data, and this is where underfitting and overfitting can start.  If the algorithm is underfitting the training data, it would not be able to correctly categorize the training data nor any new data accurately.  If it is overfitting the data, it is able to categorize the training data with great accuracy (say at 90% or higher), but is not able to generalize that knowledge and categorize any new data accurately.</p>
+
+<p>For example, let's say you have some data for road conditions that is used to train self-driving cars, and the data represents the steepness and bumpiness of road terrain.  The goal of the algorithm would be to categorize the data points into terrain that requires the car to drive at a certain speed depending on the steepness and bumpiness of the terrain.  If the algorithm is underfitting the data, the car would not be able to drive on real roads without crashing a lot.  The same goes for overfitting, but in a slightly different way.  If the algorithm is doing too good of a job at categorizing the training data, it would do very well on the terrain that fit the training data well, but would do very poorly on terrain that is vastly different than the training data.</p>
+
+<p>In order to balance them, it is best to try and tune the parameters so that the algorithm can generalize to new data.  This can be done by choosing good data, limiting the number of variables you use to train your algorithm to the ones that have the most predictive power, and properly randomizing the data chosen for the training data.  If all else fails, especially in the case of underfitting, the algorithm chosen might not be the best fit, so playing around with different algorithms to find the best one will help.</p>
+
+<h2>
+<a id="user-content-6-if-you-were-to-start-your-data-analyst-position-today-what-would-be-your-goals-a-year-from-now" class="anchor" href="http://localhost:6419/#6-if-you-were-to-start-your-data-analyst-position-today-what-would-be-your-goals-a-year-from-now" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. If you were to start your data analyst position today, what would be your goals a year from now?</h2>
+
+<p>My personal goals would be to have improved as a data analyst.  I am still new to the world of data analytics and I know I still have a lot to learn.  I know the areas I am the weakest in right now, and I am sure more weaknesses will get highlighted as I work with real data to answer real world problems, so I want to meet those weaknesses head on to improve them.</p>
+
+<p>More specifically for this job, I would want to have become proficient in Java, "big data" systems like Hadoop, and learn how to become more business oriented in my analysis.  I would also want to have brought value to the company and have helped the company as a whole grow.  I want to have been able to sufficiently answer any data questions that the engineering teams I work with have so that they were able to make better informed decisions.  Ultimately, coming from a background in teaching  English as a foreign language, I hope to have helped improve the learning experience for the hundreds of thousands of users around the world.</p>
+
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+  </div>
+  <div>&nbsp;</div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+
+</body></html>

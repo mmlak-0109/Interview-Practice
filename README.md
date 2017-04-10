@@ -76,7 +76,7 @@ So, to sum up:
 construct a query to find the top 5 states with the highest number of active users. Include the number for each state in the query result. Example result:
 
 | state | num_active_users |
-| --- | --- |
+| --- | :---: |
 | New Mexico | 502 |
 | Alabama | 495 |
 | California | 300 |
